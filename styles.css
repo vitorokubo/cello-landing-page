@@ -1,0 +1,351 @@
+*,::after,::before{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+}
+
+:root{
+
+  --champagne: hsl(36, 51%, 86%);
+  --grullo: hsl(28, 20%, 66%);
+  --battleship-grey: hsl(210, 1%, 52%);
+  --old-rose: hsl(8, 37%, 62%);
+  --dark-sienna: hsl(356, 100%, 8%);
+  --paragraph: hsl(210, 9%, 31%);
+
+  
+
+  /*font-family: 'Lato', sans-serif;
+  font-family: 'Merriweather', serif;*/
+}
+
+
+html,
+body{
+  font-size: 62.5%;
+  width: 100vw;
+  height: 100vh;
+  display:flex;
+  flex-direction: column;
+  overflow: overlay;
+  background-color: var(--battleship-grey);
+}
+
+/*---Header/Nav---*/
+
+header{
+  width: auto;
+  height: 7rem;
+
+  display: flex;
+  justify-content: space-between;
+
+  padding-inline: 2rem;
+
+  background-color: var(--grullo);
+}
+
+
+.logo{
+  display:flex;
+  place-items:  center;
+}
+
+#header-img{
+  height: 6rem;
+}
+
+.logo-p{
+  font-size: 4rem;
+  font-family: 'Merriweather', serif;
+  font-weight: 700;
+  color: var(--dark-sienna);
+  transition: all 1s ease;
+}
+
+.logo-p:hover{
+  color:beige;
+}
+nav{
+  display: flex;
+  place-items: center;
+}
+
+header ul{
+  width: 40vw;
+  display:flex;
+  justify-content: space-around;
+
+}
+
+a{
+  text-decoration:none;
+  transition: all 1s ease;
+}
+
+a:hover{
+  color:beige;
+}
+
+.nav-link{
+  font-size: 2.5rem;
+  font-family: 'Lato', sans-serif;
+  color: var(--dark-sienna);
+}
+
+
+/*---Main---*/
+
+.wrapper{
+  width: min(120rem, 90%);
+  margin: auto;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2{
+  font-family: 'Lato', sans-serif;
+  font-size: 3rem;
+  display:block;
+  color: var(--dark-sienna);
+}
+
+p{
+  font-family: 'Lato', sans-serif;
+  font-size: 2rem;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+li{
+  list-style:none;
+}
+
+img{
+  object-fit: cover;
+  border-radius: 1rem;
+}
+
+section{
+  display:flex;
+  flex-direction: column;
+  margin-block: 5rem;
+  gap:3rem;
+  width:100%;
+}
+
+section p{
+    text-indent: 3rem;
+}
+
+section h2{
+  padding: 1rem;
+}
+
+hr{
+  border: 1px solid snow;
+  width: 30vw;
+}
+
+
+/*Section-Orçamento*/
+
+#email{
+  font-size:2rem;
+}
+
+#orçamento{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+
+
+#submit{
+  font-weight: 700;
+  color:black;
+  background-color:darkorange;
+  width: 5rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 2px;
+  padding: 0.5rem;
+}
+
+form{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Section-Info*/
+
+#info-img{
+  width: min(112rem, 80vw);
+}
+
+#info{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+.column{
+  column-width: 40rem ;
+  column-gap: 3rem;
+ 
+}
+
+/*Section-Modelos*/
+/*Strad-Model*/
+
+.stradivarius{
+  column-width: 40rem;
+  column-gap: 3rem;
+}
+
+.stradivarius-text{
+  height: 50rem;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.stradivarius-img{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+/*Motagnana-Model*/
+
+.montagnana{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+}
+.montagnana-text{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.montagnana-img{ 
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Section-Preço*/
+#preços{
+ flex-direction: row;
+ flex-wrap:wrap;
+ justify-content: center;
+ width: 100%;
+}
+
+.produto{
+display:flex;
+justify-content: center;
+align-items: center;
+color:beige;
+background-color: var(--dark-sienna);
+width:100%;
+height: 20%;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: space-between;
+  align-items: center;
+  width: 30rem;
+  height: 35rem;
+  border: solid 1px var(--battleship-grey);
+  border-radius: 6px;
+  font-size: 1.6rem;
+  background-color: var(--champagne);
+  overflow: hidden;
+}
+
+.info{
+  color:white;
+  width: 5rem;
+  margin: 1rem;
+  border: none;
+  border-radius: 2px;
+  padding: 0.5rem;
+  background-color: var(--battleship-grey);
+  transition: all 1s ease;
+}
+
+.info:hover{
+  font-weight: 700;
+  color:black;
+  background-color:darkorange;
+}
+/*Section-Construção*/
+
+iframe{
+  height: 60rem;
+}
+
+
+/*--Footer---*/
+
+footer{
+  color: var(--paragraph);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: var(--grullo);
+  width: 100%;
+  padding: 1.5rem;
+  font-size: 1.5rem;
+}
+
+footer p{
+  font-size: 1.8rem;
+}
+
+footer ul{
+  display:flex;
+  justify-content: flex-end;
+  
+}
+footer li{
+  padding: 0 10px;
+}
+
+footer a{
+  color: var(--paragraph);
+}
+
+/*Media*/
+
+
+
+@media only screen and (max-width: 924px){
+  .montagnana{
+    display:grid;
+    grid-template-columns: 1fr;
+  }}
+
+  @media only screen and (max-width: 1024px){
+    h1, h2{
+      font-size: 3rem;
+    
+    }
+    
+    .logo-p{
+      font-size: 2.5rem;}
+
+    .nav-link{
+      font-size: 1.5rem;}
+     
+      footer p{
+        font-size: 1.5rem;
+      }
+    
+   }

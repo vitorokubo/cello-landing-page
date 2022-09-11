@@ -267,6 +267,12 @@ height: 20%;
   font-size: 1.6rem;
   background-color: var(--champagne);
   overflow: hidden;
+  transition: all 0.2s;
+}
+
+.card:hover{
+  border-radius: 6px;
+  border: 2px solid darkgoldenrod;
 }
 
 .info{
